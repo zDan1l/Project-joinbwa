@@ -1,0 +1,286 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+    
+    @font-face {
+        font-family: "font-regular";
+        src: url(component/font/Poppins-Regular.otf);
+    }
+    
+    @font-face {
+        font-family: "font-light";
+        src: url(component/font/Poppins-Light.otf);
+    }
+    
+    @font-face {
+        font-family: "font-extrabold";
+        src: url(component/font/Poppins-ExtraBold.otf);
+    }
+    
+    @font-face {
+        font-family: "font-semibold";
+        src: url(component/font/Poppins-SemiBold.otf);
+    }
+    
+    header,
+    main {
+        font-family: font-regular;
+        font-size: 16px;
+        color: #5A6772;
+        height: 30px;
+        margin: 0 auto;
+    }
+    /* header */
+    
+    a.navbar-brand.fw-bolder {
+        color: #150544;
+        font-size: 32px;
+        border-radius: 10px;
+    }
+    
+    nav ul li {
+        margin: 0 10px;
+    }
+    
+    button#signup {
+        background: #150544;
+        color: #fff;
+        margin-left: 10px;
+        text-transform: uppercase;
+    }
+    /* main */
+    
+    .enterprice-features {
+        background: url(component/Unionbackground.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 50px;
+    }
+    
+    .features {
+        text-align: center;
+        margin: 150px auto 0;
+        max-width: 80%;
+    }
+    
+    .features h1 {
+        font-family: "font-extrabold";
+        color: #150544;
+    }
+    
+    .list-features {
+        margin-top: 60px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        z-index: 100;
+    }
+    
+    .feature {
+        margin-top: 30px;
+    }
+    
+    .img-feature {
+        margin-bottom: 15px;
+    }
+    /* packages */
+    
+    .packages-service {
+        height: max-content;
+        position: relative;
+        margin-bottom: 140px;
+    }
+    
+    .packages {
+        max-width: 90%;
+        margin: 60px auto 0;
+    }
+    
+    .packages h1 {
+        color: #150544;
+        font-family: "font-extrabold";
+        text-align: center;
+    }
+    
+    .list-package {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        margin-top: 130px;
+        row-gap: 100px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .packages .card {
+        color: #150544;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 1000;
+    }
+    
+    .card-2 {
+        border: 3px solid #150544 !important;
+        margin-top: -60px;
+    }
+    
+    .card-2 .card-header {
+        background-color: #150544;
+        color: #fff;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .card-2 .ceklis {
+        background: #150544;
+    }
+    
+    .card-2 a {
+        background-color: #150544;
+        color: #fff;
+    }
+    
+    .packages .card-body {
+        margin: 10px;
+    }
+    
+    .packages .card-title .price {
+        font-family: "font-extrabold";
+        font-size: 52px;
+    }
+    
+    .packages .card .list-item {
+        margin: 25px 0;
+    }
+    
+    .terms {
+        position: absolute;
+        text-align: center;
+        background-color: #150544;
+        bottom: -160px;
+        left: 0;
+        right: 0;
+        height: 500px;
+        z-index: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding-bottom: 40px;
+        box-sizing: border-box;
+        background-color: #E7F6FF;
+        font-weight: lighter;
+        font-family: "font-light";
+    }
+    
+    .terms a {
+        color: #150544;
+    }
+    /* client */
+    
+    .client {
+        padding-bottom: 10px;
+        text-align: center;
+        background: url(component/Unionbackground2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding-bottom: 50px;
+        background-color: #150544;
+        font-family: "font-light";
+        z-index: -1;
+    }
+    
+    .client span {
+        left: 17%;
+        position: absolute;
+        font-size: 288px;
+        font-family: Arial, Helvetica, sans-serif;
+        letter-spacing: -40px;
+        transform: rotate(-180deg);
+        color: #6552FF;
+    }
+    
+    .client .comment {
+        padding-top: 150px;
+        margin: 0 auto;
+        max-width: 60%;
+        font-size: 36px;
+        color: #fff;
+        z-index: 1000;
+    }
+    
+    .client .img-client {
+        margin-top: 30px;
+        margin-bottom: 10px;
+        color: #fff;
+    }
+    
+    .name {
+        font-size: 20px;
+    }
+    /* reponsive breakpoints */
+    
+    @media screen and (max-width:576px) {
+        .client .comment {
+            font-size: 20px;
+        }
+        .client span {
+            margin-top: 20px;
+            font-size: 200px;
+            letter-spacing: -30px;
+        }
+        .name {
+            font-size: 18px;
+        }
+        .packages {
+            max-width: 100%;
+        }
+        .list-package {
+            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        }
+        .card-2 {
+            margin-bottom: 50px;
+        }
+        .text-term,
+        .text-package {
+            margin: 0 auto;
+            max-width: 80%;
+        }
+        .client .img-client img {
+            width: 4em;
+        }
+        .img-client .name {
+            font-size: 14px;
+        }
+        .img-client p {
+            margin-top: 10px;
+            font-size: 12px;
+        }
+    }
+    
+    @media screen and (max-width:900px) {
+        .packages {
+            max-width: 100%;
+        }
+        .list-package {
+            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)) !important;
+        }
+        .card-2 {
+            margin-bottom: 50px;
+        }
+    }
+    
+    @media screen and (max-width:768px) {
+        .packages {
+            max-width: 100%;
+        }
+        .card-2 {
+            margin-bottom: 50px;
+        }
+        .list-package {
+            margin-top: 20px;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)) !important;
+        }
+    }
